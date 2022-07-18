@@ -10,7 +10,7 @@
     import 'echarts/lib/chart/pie';
     import 'echarts/lib/component/title';
     import 'echarts/lib/component/legend';
-    
+
     export default {
         mounted(){
             this.myChart = echarts.init(document.getElementById('visitorpie'));
@@ -21,7 +21,7 @@
             initData(){
                 const option = {
                     title : {
-                        text: '用户分布',
+                        text: '汽车出租类型分布',
                         subtext: '',
                         x:'center'
                     },
@@ -32,7 +32,7 @@
                     legend: {
                         orient: 'vertical',
                         left: 'left',
-                        data: ['北京','上海','深圳','杭州','其他']
+                        data: ['大众','一汽','小鹏','东风','大黄蜂']
                     },
                     series : [
                         {
@@ -41,10 +41,10 @@
                             radius : '55%',
                             center: ['50%', '60%'],
                             data:[
-                                {value:this.pieData.beijing, name:'北京'},
-                                {value:this.pieData.shanghai, name:'上海'},
-                                {value:this.pieData.shenzhen, name:'深圳'},
-                                {value:this.pieData.hangzhou, name:'杭州'},
+                                {value:this.pieData.beijing, name:'大众'},
+                                {value:this.pieData.shanghai, name:'一汽'},
+                                {value:this.pieData.shenzhen, name:'东风'},
+                                {value:this.pieData.hangzhou, name:'大黄蜂'},
                                 {value:this.pieData.qita, name:'其他'}
                             ],
                             itemStyle: {

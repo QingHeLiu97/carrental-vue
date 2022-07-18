@@ -32,7 +32,7 @@
     					throw new Error(res)
     				}
     			}catch(err){
-    				console.log('获取用户分布信息失败',err);
+    				console.log('获取租车分布信息失败',err);
     			}
     		},
     	}
@@ -41,5 +41,5 @@
 
 <style lang="less">
 	@import '../style/mixin';
-	
+
 </style>
