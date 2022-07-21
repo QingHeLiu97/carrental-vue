@@ -9,9 +9,9 @@
 let baseUrl = 'http://localhost:8001';
 let routerMode = 'hash';
 let baseImgPath;
-
+//http://localhost:8001
 if (process.env.NODE_ENV == 'development') {
-	baseUrl = 'http://localhost:8001';
+	baseUrl = '';
     baseImgPath = '/img/';
 }else{
 	baseUrl = 'http://localhost:8001';
