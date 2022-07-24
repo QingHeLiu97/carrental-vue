@@ -5,7 +5,7 @@
         <div class="admin_set">
             <ul>
                 <li>
-                    <span>姓名：</span><span>{{adminInfo.user_name}}</span>
+                    <span>姓名：</span><span><el-input id="user_name" v-model="adminInfo.user_name"></el-input></span>
                 </li>
                 <li>
                     <span>注册时间：</span><span>{{adminInfo.create_time}}</span>
@@ -16,18 +16,6 @@
                 <li>
                     <span>管理员 ID：</span><span>{{adminInfo.id}}</span>
                 </li>
-                <li>
-                    <span>更换头像：</span>
-                    <el-upload
-                      class="avatar-uploader"
-                      :action="baseUrl + '/admin/update/avatar/' + adminInfo.id"
-                      :show-file-list="false"
-                      :on-success="uploadImg"
-                      :before-upload="beforeImgUpload">
-                      <img v-if="adminInfo.avatar" :src="baseImgPath + adminInfo.avatar" class="avatar">
-                      <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-                    </el-upload>
-                </li>    
             </ul>
         </div>
     </div>

@@ -6,6 +6,14 @@ import fetch from '@/config/fetch'
 
 export const login = data => fetch('/admin/login', data, 'POST');
 
+// export const getComplaintList = function (data){
+//     return request({
+//         url:'/complaint/pages',
+//         method:"GET",
+//         params:data,
+//     })
+// }
+
 /**
  * 退出
  */

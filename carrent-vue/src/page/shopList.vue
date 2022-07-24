@@ -8,43 +8,43 @@
                 <el-table-column type="expand">
                   <template slot-scope="props">
                     <el-form label-position="left" inline class="demo-table-expand">
-                      <el-form-item label="店铺名称">
+                      <el-form-item label="汽车编号">
                         <span>{{ props.row.name }}</span>
                       </el-form-item>
-                      <el-form-item label="店铺地址">
+                      <el-form-item label="类型">
                         <span>{{ props.row.address }}</span>
                       </el-form-item>
-                      <el-form-item label="店铺介绍">
+                      <el-form-item label="颜色">
                         <span>{{ props.row.description }}</span>
                       </el-form-item>
-                      <el-form-item label="店铺 ID">
+                      <el-form-item label="价格">
                         <span>{{ props.row.id }}</span>
                       </el-form-item>
-                      <el-form-item label="联系电话">
+                      <el-form-item label="押金">
                         <span>{{ props.row.phone }}</span>
                       </el-form-item>
-                      <el-form-item label="评分">
+                      <el-form-item label="车名">
                         <span>{{ props.row.rating }}</span>
                       </el-form-item>
-                      <el-form-item label="销售量">
+                      <el-form-item label="上架时间">
                         <span>{{ props.row.recent_order_num }}</span>
                       </el-form-item>
-                      <el-form-item label="分类">
+                      <el-form-item label="状态">
                         <span>{{ props.row.category }}</span>
                       </el-form-item>
                     </el-form>
                   </template>
                 </el-table-column>
                 <el-table-column
-                  label="店铺名称"
+                  label="汽车类型"
                   prop="name">
                 </el-table-column>
                 <el-table-column
-                  label="店铺地址"
+                  label="汽车名称"
                   prop="address">
                 </el-table-column>
                 <el-table-column
-                  label="店铺介绍"
+                  label="汽车价格"
                   prop="description">
                 </el-table-column>
                 <el-table-column label="操作" width="200">
